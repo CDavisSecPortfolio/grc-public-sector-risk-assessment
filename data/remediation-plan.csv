@@ -1,0 +1,11 @@
+action_id,risk_id,owner,start_day,due_day,action,dependency,closure_criteria,status
+A-01,R-01,Identity lead,0,7,Identify exclusions and implement interim sign-in restrictions,Account inventory,All 18 exclusions reviewed; temporary exceptions approved with expiry,Planned
+A-02,R-01,Identity lead,7,30,Enforce MFA across in-scope staff accounts,A-01,120 of 120 protected or formally approved exception; sign-in tests pass,Planned
+A-03,R-02,Endpoint lead,0,30,Triage and remediate patch backlog,Full endpoint inventory,26 overdue endpoints patched or isolated with approved exception; deployment evidence verified,Planned
+A-04,R-03,Infrastructure lead,0,30,Isolate backup privileges and demonstrate restoration,Approved recovery objectives from service owner,Restore passes integrity checks and approved recovery objectives; separate admin access verified,Planned
+A-05,R-04,Identity lead,0,14,Remove stale access and review privilege,HR roster and identity export,7 stale accounts disabled; 4 grants removed or approved; no unexplained roster differences,Planned
+A-06,R-05,Vendor manager,14,60,Complete hosting vendor review,Vendor evidence and contract owner,Review signed; gaps tracked; notification and escalation responsibilities documented,Planned
+A-07,R-06,Security lead,14,60,Connect cloud admin logs and test alerts,Log access and storage approval,Approved test event visible; alert triaged and escalated within agreed response target,Planned
+A-08,R-07,Security lead,30,60,Refresh response plan and run tabletop,Current contact list; A-07 where applicable,Tabletop completed; owners and deadlines assigned to every unresolved issue,Planned
+A-09,R-08,Data owner,30,90,Restrict exports and approve retention schedule,Business purpose and recordkeeping requirements review,Broad grants removed; retention approved; sample disposal verified,Planned
+A-10,R-01 through R-08,Risk coordinator,60,90,Retest and refresh risk register,Completed actions and closure evidence,Actual residual scores justified; remaining High risks escalated; no closure based only on target forecast,Planned
