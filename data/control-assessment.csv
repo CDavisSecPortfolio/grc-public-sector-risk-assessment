@@ -1,0 +1,9 @@
+control_id,risk_id,csf_categories,status,evidence_id,gap,recommendation,validation_procedure
+C-01,R-01,PR.AA,Partial,E-01,102 of 120 accounts enrolled; exclusions lack approval,Require MFA; block legacy sign-in paths; time-limit exceptions,Review full enrollment export and sign-in policies; test allowed and blocked cases
+C-02,R-02,PR.PS,Partial,E-02,26 devices exceed project patch target,Remediate backlog; prioritize exposed weaknesses; record approved exceptions,Compare full inventory to patch report; sample installations and exception approvals
+C-03,R-03,PR.IR;RC.RP,Untested,E-03,Job success available; isolated restoration not demonstrated,Separate backup privileges and perform isolated restoration,Restore selected database in isolated environment; record integrity and elapsed time
+C-04,R-04,PR.AA,Partial,E-04,Active terminated accounts and excess privilege,Disable stale accounts; review privileged grants; reconcile HR feed,Reconcile HR roster to all identities; inspect disabling timestamps and approved grants
+C-05,R-05,GV.SC,Not evidenced,E-05,Assurance review and incident terms absent from sample packet,Assess vendor evidence and document risk-dependent notification expectations,Review assessment approval; validate contractual escalation contacts and notification terms
+C-06,R-06,DE.CM;DE.AE,Partial,E-06,Cloud admin event feed missing,Ingest administrative logs and test response routing,"Generate approved test admin event; confirm ingestion, alert, triage, and escalation"
+C-07,R-07,RS.MA;RS.CO,Partial,E-07,Contacts stale and procedure unexercised,Update responsibilities and conduct tabletop,"Record tabletop attendance, decisions, timing, and follow-up issue closure"
+C-08,R-08,PR.DS;GV.PO,Partial,E-08,Broad export access; retention owner unspecified,Restrict exports and approve purpose-based retention rules,Review access membership; sample approved disposal evidence and exceptions
