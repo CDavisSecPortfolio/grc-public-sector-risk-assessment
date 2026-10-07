@@ -1,6 +1,6 @@
 # Risk dashboard
 
-Generated from `data/risk-register.csv`.
+Summary of `data/risk-register.csv`. Review likelihood × impact scores and rating counts in a spreadsheet, and update this summary when the register changes.
 
 Targets are forecasts; actual residual risk requires validation.
 
@@ -23,3 +23,4 @@ Targets are forecasts; actual residual risk requires validation.
 | R-06 | 12 | Security lead |
 | R-07 | 12 | Security lead |
 | R-08 | 9 | Data owner |
+
