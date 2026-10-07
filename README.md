@@ -12,7 +12,7 @@ A fictional municipal services agency needs to protect resident records while ma
 2. Review the [scope and scoring method](docs/methodology.md).
 3. Compare the [simulated evidence](docs/evidence-log.md) with the [risk register](data/risk-register.csv).
 4. Inspect the [control assessment](data/control-assessment.csv) and [remediation plan](data/remediation-plan.csv).
-5. Run the risk summarizer to validate scores and produce a dashboard.
+5. Review the [risk dashboard](docs/risk-dashboard.md) for a summary of priorities.
 
 ## What this demonstrates
 
@@ -26,15 +26,9 @@ A fictional municipal services agency needs to protect resident records while ma
 
 Cedar Harbor Municipal Services is a fictional agency with 120 employees, a cloud resident portal, a Windows endpoint fleet, and a third-party hosting provider. The assessment assumes a 12-month risk horizon. See [methodology](docs/methodology.md) for exclusions and assumptions.
 
-## Run locally
+## Review the project
 
-Requires Python 3.10+; no third-party packages or credentials.
-
-```bash
-python3 scripts/summarize_risks.py
-```
-
-The script validates unique risk IDs, score ranges, calculated scores, and rating labels. It then prints summary JSON and writes `docs/risk-dashboard.md`. Run it after editing the CSV.
+Open the CSV files in Excel, Google Sheets, or another spreadsheet application. Read the Markdown reports directly on GitHub. Risk scores use likelihood × impact; the rating thresholds are documented in the methodology. When the register changes, review the scores and update the dashboard summary.
 
 ## Project files
 
@@ -43,12 +37,11 @@ The script validates unique risk IDs, score ranges, calculated scores, and ratin
 | `docs/executive-report.md` | Leadership decisions and priority rationale |
 | `docs/methodology.md` | Scope, evidence rules, scoring, and limitations |
 | `docs/evidence-log.md` | Traceable synthetic observations |
-| `docs/risk-dashboard.md` | Generated risk summary |
+| `docs/risk-dashboard.md` | Risk summary and priorities |
 | `docs/risk-acceptance-template.md` | Time-limited exception workflow |
 | `data/risk-register.csv` | Eight scored risks with target estimates |
 | `data/control-assessment.csv` | Control gaps and evidence-based testing criteria |
 | `data/remediation-plan.csv` | Sequenced work and closure criteria |
-| `scripts/summarize_risks.py` | Reproducible validation and reporting |
 
 ## Framework source
 
@@ -57,3 +50,4 @@ The script validates unique risk IDs, score ranges, calculated scores, and ratin
 ## Interview discussion
 
 Be ready to explain why ransomware and identity risks are prioritized, why target scores are not verified residual scores, what evidence would close a finding, and why an average risk score can hide a critical exposure. Review the material before describing this as your completed hands-on work.
+
