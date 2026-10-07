@@ -1,4 +1,3 @@
-__pycache__/
-*.pyc
-.venv/
+# Temporary spreadsheet lock files
+~$*
 .DS_Store
